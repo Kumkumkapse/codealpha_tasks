@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CodeAlpha Social Media Platform</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">CodeAlpha</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#posts">Posts</a>
+            <a href="#profile">Profile</a>
+            <a href="/auth.html">Login</a>
+            <button id="logoutBtn">Logout</button>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- Welcome Section -->
+        <section id="home" class="welcome">
+            <h1>Welcome to CodeAlpha Social</h1>
+            <p>Connect, share and interact with your community.</p>
+        </section>
+
+
+        <!-- Create Post -->
+        <section class="create-post">
+            <h2>Create a Post</h2>
+
+            <textarea
+                id="postContent"
+                placeholder="What's on your mind?"
+            ></textarea>
+
+            <button id="createPostBtn">Post</button>
+        </section>
+
+
+        <!-- Posts -->
+        <section id="posts" class="posts-section">
+            <h2>Recent Posts</h2>
+
+            <div id="postsContainer">
+                <!-- Posts will appear here -->
+            </div>
+        </section>
+
+
+        <!-- Profile -->
+        <section id="profile" class="profile-section">
+            <h2>My Profile</h2>
+
+            <p id="profileName">User Name</p>
+            <p id="profileEmail">user@email.com</p>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 CodeAlpha Social Media Platform</p>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
